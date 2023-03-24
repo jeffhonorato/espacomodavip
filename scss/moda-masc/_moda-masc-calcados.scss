@@ -1,0 +1,50 @@
+/******* CATALOGO CALÇADOS MASC CARDS  *******/
+.catalogo__moda__masc {
+    background-image: url("../images/moda-masc/background-sectionMasc.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 2rem 0;
+    height: 130vh;
+
+        @include celular {
+            height: 125vh;
+        }
+
+        @include tablet {
+            height: 135vh;
+        }
+
+}
+
+
+.catalogo__titulo--calcadoMasc {
+    background-color: $cor-sectionMasc;
+    font-family: $fonte-titulo;
+    color: #fff;
+    font-size: 3.5rem;
+    border: 1px solid #fff;
+    width: 300px;
+    box-shadow: 4px 4px 10px 0 #000; 
+    margin: 2rem auto;
+    text-align: center;
+
+
+        &:hover {
+            box-shadow: 4px 5px 5px 0 #000; 
+            transition: all .4s;
+        }
+
+        @include celular {
+            width: 70%;
+            margin: 2rem auto;
+            font-size: 2rem;
+            box-shadow: 4px 4px 10px 0 #fff; 
+            padding: .5rem;
+        }
+
+        @include tablet {
+            width: 400px;
+        }
+}

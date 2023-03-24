@@ -1,0 +1,98 @@
+.marcas {
+    background: linear-gradient(
+        rgba(0,0,0,0.2),
+        rgba(0,0,0,0.2)),
+
+    url("../images/marcas/background-marcas.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+    height: 100vh;
+
+        @include celular {
+            height: 130vh;
+        }
+
+        @include tablet {
+            height: 120vh;
+        }
+
+    .marcas__box--conteudo {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-content: center;
+        align-items: center;
+        height: 100vh;
+       
+    }   
+
+    // .marcas__box--info {
+    //     background-color: violet;
+    // }
+
+    .marcas__box--titulo {
+        font-family: $fonte-subtitulo;
+        color: #fff;
+        font-size: 7rem;
+        text-align: center;
+        transform: rotateZ(-25deg);
+
+            @include celular {
+                font-size: 2rem;
+            }
+        
+    }
+    
+    .marcas__box {
+        // background-color: coral;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin: 0 .5rem;
+
+    }
+
+
+    .marca__box {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        
+
+            @include celular {
+                height: 20vh;
+                gap: .3rem;
+            }
+
+            @include tablet {
+                height: 20vh;
+                gap: .3rem;
+            }
+    }
+
+    .marca__img {
+        width: 7rem; /* 128px */
+        height: 7rem;
+        border-radius: 20%;
+        border: 1px solid #000;
+        padding: .5rem;
+        box-shadow: 4px 10px 10px 0 #000;
+        background-color: #fff;
+
+        @include celular {
+            width: 3.5rem;
+            height: 3.5rem;
+            padding: .1rem;
+        }
+
+        @include tablet {
+            width: 4.5rem;
+            height: 4.5rem;
+            padding: .2rem;
+        }
+        
+    }
+
+}
