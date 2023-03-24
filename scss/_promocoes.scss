@@ -353,15 +353,22 @@
 
             .acordion__link {
                 display: flex;
-                gap: .2rem;
+                gap: .4rem;
                 padding: .2rem;
-                align-items: center;
+                align-items: center;     
+                margin: 0 auto;
+            }
+
+            .acordion__link--btn {
                 background-color: $cor-links;
                 border-radius: 10px;
                 padding: .8rem 1rem;
                 box-shadow: 4px 0 2px 0 #fff;
-                width: 120px;
-                margin: 0 auto;
+                width: 100px;
+
+                display: flex;
+                align-items: center;
+                gap: .3rem;
 
                 &:hover {
                     background-color: $cor-sectionFem;
@@ -376,7 +383,6 @@
                 &:hover .acordion__a {
                     color: #000;
                 }
-                
             }
 
             .acordion__icone {
