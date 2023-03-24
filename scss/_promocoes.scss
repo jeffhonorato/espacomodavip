@@ -294,6 +294,19 @@
                 font-weight: bold;
             }
 
+            .acordion__preco--obs {
+                text-align: center;
+                font-family: $fonte-corpo;
+                font-weight: bold;
+                margin-top: .5rem;
+            }
+
+            .acordion__preco--obs strong {
+                font-weight: bold;
+                font-family: $fonte-titulo;
+                
+            }
+
             .acordion__tam--box {
                 display: flex;
                 flex-direction: column;
