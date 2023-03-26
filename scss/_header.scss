@@ -1,5 +1,5 @@
 #header {
-    background: linear-gradient(40deg, #c1b8ae, #DF007A) ;
+    background: linear-gradient(40deg, #F2BE99, #523e27) ;
 
     padding: 1rem;
     position: relative;
@@ -72,7 +72,6 @@
         .nav__itens {
             display: none;
             flex-direction: column;
-            // gap: .3rem;
             position: fixed;
             top: 90px;
             right: 5px;
@@ -120,7 +119,7 @@
             height: 100%;
             transform-origin: right;
             transform: skewY(45deg);
-            background: #000;
+            background: $cor-sectionFem;
             border: 2px solid $cor-sectionMasc;
 
                 @include celular {
@@ -142,7 +141,7 @@
             transform-origin: bottom;
             transform: skewX(45deg);
             background: #000;
-            border: 2px solid $cor-sectionMasc;
+            border: 2px solid $cor-sectionFem;
 
                 @include celular {
                     display: none;

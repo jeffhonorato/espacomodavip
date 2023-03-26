@@ -96,7 +96,13 @@
                 &:hover .nav__ico {
                     color: #000;
                     font-weight: bold;
-                }     
+                }  
+
+                &:hover .nav__ico--masc {
+                    color: #000;
+                    font-weight: bold;
+                }   
+                
         }
 
         .nav__ico {
@@ -106,6 +112,10 @@
             @include celular {
                 font-size: 1.2rem;  
             }
+        }
+
+        .nav__ico--masc {
+            color: #fff;
         }
 
         .btn__titulo { 
@@ -126,6 +136,7 @@
         }
 
         .masculino--btn {
+            color: #fff;
             @include celular {
                 font-size: 13px;
             }
@@ -403,7 +414,6 @@
 /******** TENDENCIA MASCULINA ********/
 .tendencia__masc {
     margin-top: 5rem;
-
 
     .container__cards__masc {
         display: flex;
