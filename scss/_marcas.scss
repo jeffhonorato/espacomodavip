@@ -40,7 +40,8 @@
         transform: rotateZ(-25deg);
 
             @include celular {
-                font-size: 2rem;
+                font-size: 4rem;
+                transform: rotateZ(-10deg);
             }
         
     }
