@@ -763,16 +763,18 @@
     .acordion {
         background-color: $cor-sectionFem;
         padding: 1rem;
-        border: 2px solid #fff;
+        box-shadow: 1px 1px 10px #fff;
         border-radius: 5px;
         margin-top: .2rem;
+        border-top-left-radius: 20%;
+        border-bottom-right-radius: 20%;
         cursor: pointer;
         width: 260px;
   
             .acordion__titulo {
                 text-align: center;
-                color: #fff;
-                font-family: $fonte-corpo;
+                color: #000;
+                font-family: $fonte-titulo;
                 font-size: 1.5rem;
                 margin-bottom: 1rem;
                 
