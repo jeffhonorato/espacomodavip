@@ -230,8 +230,8 @@
             transition: all .5s;
         }
 
-        &:hover .acordion__comp--titulo {
-            color: $cor-sectionFem;
+        &:hover .acordion__tam {
+            color: #000;
             transition: all .5s;
         }
 
@@ -775,6 +775,43 @@
         border-bottom-right-radius: 20%;
         cursor: pointer;
         width: 260px;
+
+        &:hover {
+            transition: all .5s;
+            box-shadow: 4px 4px 30px $cor-sectionFem;
+            background-color: #fff;
+        }
+
+        &:hover .acordion__desc {
+            color: #000;
+            transition: all .5s;
+        }
+
+        &:hover .acordion__tam {
+            color: #000;
+            transition: all .5s;
+        }
+
+        &:hover .acordion__comp--p {
+            color: #000;
+            transition: all .5s;
+        }
+
+        &:hover .acordion__tam--ico {
+            background-color: $cor-sectionFem;
+            transition: all .5s;
+            color: #000;
+            border: 1px solid #000;
+        }
+
+        &:hover .acordion__cod {
+            color: #000;
+            transition: all .5s;
+        }
+
+        &:hover .acordion__preco--info {
+            background: $cor-sectionFem;
+        }
   
             .acordion__titulo {
                 text-align: center;
@@ -793,32 +830,59 @@
                 text-align: center;
             }
 
-            .acordion__preco {
-                color: #000;
-                font-family: $fonte-corpo;
-                font-size: 1.2rem;
-                font-weight: bold;
-                text-align: center;
-                margin-bottom: 1.5rem;
+            .acordion__preco--info {
+                margin-bottom: 1rem;
                 background: #fff;
                 opacity: .9;
                 padding: .8rem;
                 border: 2px solid #000;
                 border-top-left-radius: 20%;
+                border-bottom-right-radius: 20%;
+            }
 
-                span {
-                    text-decoration: line-through;
-                }
+            .acordion__preco--velho {
+                text-align: center;
+                font-family: $fonte-corpo;
+                font-weight: bold;
+                
+            }
+
+            .acordion__preco {
+                color: #000;
+                font-family: $fonte-titulo;
+                font-size: 1.2rem;
+                font-weight: bold;
+                text-align: center;
 
                 strong {
                     font-size: 1.65rem;
                 }
             }
 
+            .acordion__preco--juros {
+                text-align: center;
+                font-family: $fonte-corpo;
+                font-weight: bold;
+            }
+
+            .acordion__preco--obs {
+                text-align: center;
+                font-family: $fonte-corpo;
+                font-weight: bold;
+                margin-top: .5rem;
+            }
+
+            .acordion__preco--obs strong {
+                font-weight: bold;
+                font-family: $fonte-titulo;
+                
+            }
+
             .acordion__tam--box {
                 display: flex;
+                flex-direction: column;
                 gap: .5rem;
-                margin-bottom: .3rem;
+                margin-bottom: .8rem;
             }
 
             .acordion__tam {
@@ -829,9 +893,31 @@
             }
 
             .acordion__tam--ico {
-                background-color: #000;
+                background-color: #fff;
                 border-radius: 50%;
-                padding: .2rem;
+                padding: .4rem;
+                border: transparent 1px solid #000;
+            }
+
+            .acordion__tam {
+                text-align: center;
+                color: $cor-fonte-texto;
+                font-family: $fonte-corpo;
+                font-size: 1.3rem;
+                font-weight: bold;
+            }
+
+            .acordion__tamanhos--pmg {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: .5rem;
+            }
+
+            .acordion__tam--ref {
+                color: #000;
+                font-family: $fonte-titulo;
+                font-size: 1.4rem;
             }
 
             .acordion__comp {
@@ -846,22 +932,30 @@
                 margin-bottom: 1rem;
                 font-weight: bold;
                 color: #fff;
+                font-size: 1rem;
+                text-align: center;
             }
 
             .acordion__link {
                 display: flex;
-                gap: .2rem;
-                padding: .5rem;
-                align-items: center;
+                gap: .4rem;
+                padding: .2rem;
+                align-items: center;     
+                margin: 0 auto;
+            }
+            .acordion__link--btn {
                 background-color: $cor-links;
                 border-radius: 10px;
                 padding: .8rem 1rem;
                 box-shadow: 4px 0 2px 0 #fff;
-                width: 120px;
-                margin: 0 auto;
+                width: 100px;
+
+                display: flex;
+                align-items: center;
+                gap: .3rem;
 
                 &:hover {
-                    background-color: $cor-header;
+                    background-color: $cor-sectionFem;
                     box-shadow: 0 4px 2px 0 #000;
                     transition: all .6s;
                 }
@@ -873,7 +967,6 @@
                 &:hover .acordion__a {
                     color: #000;
                 }
-                
             }
 
             .acordion__icone {
@@ -885,9 +978,8 @@
                 color: #fff;
                 font-size: 1rem;
                 font-family: $fonte-titulo;
-            }
+            }       
     }
-
 }
 
 /*PROMO MASCULINA*/
