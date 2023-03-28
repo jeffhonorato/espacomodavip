@@ -210,8 +210,6 @@ const tendFemCard21 = () => {
     });
 }
 
-
-
 tendFemCard01();
 tendFemCard02();
 tendFemCard03();
