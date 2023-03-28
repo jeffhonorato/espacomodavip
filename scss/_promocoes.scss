@@ -703,6 +703,11 @@
             gap: 0.5rem;
             align-items: flex-start;
             position: relative;
+
+            &:hover .icone__promo {
+                background-color: #fff;
+                transition: all .5s;
+            }
         
                 .card__fem__lista {
                     display: flex;
@@ -734,13 +739,13 @@
         position: absolute;
         top: 0px;
         right: -30px;
-        width: 100px;
+        width: 80px;
         height: 40px;
         padding: .5rem;
         text-align: center;
-        color: #fff;
+        color: #000;
         background-color: $cor-sectionFem;
-        font-family: $fonte-corpo;
+        font-family: $fonte-titulo;
         font-weight: bold;
         font-size: 1.2rem;
         border-radius: 5px;
